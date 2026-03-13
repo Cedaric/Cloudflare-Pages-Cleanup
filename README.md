@@ -1,5 +1,8 @@
 # Cloudflare-Pages-Cleanup
 
+> [!NOTE]
+> 根据 Cloudflare 官方文档的 [已知问题](https://developers.cloudflare.com/pages/platform/known-issues/#delete-a-project-with-a-high-amount-of-deployments)：如果一个 Pages 项目的部署数量过多（超过 100 个），可能无法直接删除该项目。建议先删除所有部署记录，然后再删除项目。本项目即是为此场景设计的自动化清理工具。
+
 这个项目用于自动清理 Cloudflare Pages 的历史部署记录，支持多个项目并行处理，并通过 GitHub Actions 定时执行。
 
 ## 功能特点
